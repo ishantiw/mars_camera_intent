@@ -1,0 +1,26 @@
+{
+  "name": "mars-weather",
+  "version": "1.0.0",
+  "description": "Slack bot time service",
+  "main": "server/service.js",
+  "scripts": {
+    "start": "node bin/run.js"
+  },
+  "keywords": [
+    "slack",
+    "bot",
+    "slack",
+    "bot",
+    "nodejs",
+    "expressjs",
+    "nlp"
+  ],
+  "author": "Ishan Tiwari <ishan210788@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/client": "^3.8.1",
+    "express": "^4.14.1",
+    "properties-parser": "^0.3.1",
+    "superagent": "^3.4.1"
+  }
+}
