@@ -1,2 +1,13 @@
 # location-weather-intent
-To find the weather for a location
+To get photos and details of different cameras on Mars rover
+
+- Abbreviation	Camera	Curiousity	Opportunity	Spirit
+- FHAZ	Front Hazard Avoidance Camera	✔	✔	✔
+- RHAZ	Rear Hazard Avoidance Camera	✔	✔	✔
+- MAST	Mast Camera	✔		
+- CHEMCAM	Chemistry and Camera Complex	✔		
+- MAHLI	Mars Hand Lens Imager	✔		
+- MARDI	Mars Descent Imager	✔		
+- NAVCAM	Navigation Camera	✔	✔	✔
+- PANCAM	Panoramic Camera		✔	✔
+- MINITES	Miniature Thermal Emission Spectrometer (Mini-TES)		✔	✔

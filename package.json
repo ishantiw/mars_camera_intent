@@ -1,7 +1,7 @@
 {
-  "name": "mars-weather",
+  "name": "mars-details",
   "version": "1.0.0",
-  "description": "Slack bot time service",
+  "description": "Slack bot camera service",
   "main": "server/service.js",
   "scripts": {
     "start": "node bin/run.js"

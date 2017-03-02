@@ -6,18 +6,16 @@ const request = require('superagent');
 const parser = require('properties-parser');
 
 // get the keys from property file
-const weatherAPIKey = parser.read('./apiKeys.properties')['weatherAPIKey'];
+const marsAPIKey = parser.read('./apiKeys.properties')['marsAPIKey'];
 
-service.get('/service/:location', (req, res, next) => {
-
-    request.get('http://api.openweathermap.org/data/2.5/weather?q=' + req.params.location + '&appid='+weatherAPIKey, (err, response) => {
+service.get('/service/:camera', (req, res, next) => {
+    request.get('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=' + req.params.camera + '&api_key='+marsAPIKey, (err, response) => {
         if (err) {
             console.log(err);
             return res.sendStatus(500);
         }
-        const location = response.body.main;
-
-        res.json(location);
+        const image = response.body.photos[0];
+        res.json(image);
     });
 });
 
